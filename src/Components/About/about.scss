@@ -1,0 +1,39 @@
+@import "../mixins.scss";
+
+.about-main-container{
+    background-color:#f0edf4;
+    .about-inner-container{
+        .about-box{
+            border:3px solid #6e6e6e;
+            a{
+                text-decoration: none;
+                color:#353535;
+            }
+            
+        }
+        .about-box-social{
+            @include boxAround();
+            .social-box{
+                border:1px solid black;
+                overflow: hidden;
+                transition:0.4s;
+                height:50%;
+                width:20%;
+                border-radius:50%;
+                cursor: pointer;
+                .social-icon{
+                    transition:0.4s;
+                    img{
+                        width:100%;
+                    }
+                }
+                &:hover{
+                    background-color:#353535;
+                    .social-icon{
+                        margin-top:-100%;
+                    }
+                }
+            }
+        }
+    }
+}

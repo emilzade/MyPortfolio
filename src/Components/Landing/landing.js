@@ -63,7 +63,7 @@ function Landing(){
                         <a href="#Services">Services</a>                        
                     </SwiperSlide>
                     <SwiperSlide className="sw-sl swiper-slide-custom">
-                        <a target="blank" href="mailto:emil.sadullazade@gmail.com">Send Message</a>                        
+                        <a target="blank" href="mailto:emil.sadullazade@gmail.com">Message</a>                        
                     </SwiperSlide>
                 </Swiper>
             </div>

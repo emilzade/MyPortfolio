@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: roboto-thin;
+  src: url("../assets/fonts/Roboto-Thin.ttf");
+}
+@font-face {
+  font-family: roboto-bold;
+  src: url("../assets/fonts/Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: roboto-regular;
+  src: url("../assets/fonts/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: dune-rise;
+  src: url("../assets/fonts/Dune_Rise.otf");
+}
+@font-face {
+  font-family: munich;
+  src: url("../assets/fonts/MunichRegular-Y8x4.ttf");
+}
+.certificate-container {
+  position: relative;
+}
+.certificate-container .certificate-image {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+.certificate-container .certificate-info {
+  font-size: 0.7rem;
+  font-family: dune-rise;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: 0.3s;
+  z-index: 1;
+  filter: opacity(0);
+}
+.certificate-container:hover .certificate-info {
+  top: -100%;
+  z-index: 10;
+  filter: opacity(1);
+  box-shadow: 0px 0px 26px -1px rgb(69, 69, 69);
+}/*# sourceMappingURL=certificate.css.map */

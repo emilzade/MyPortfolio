@@ -2,18 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Navbar from "./Components/Navbar/navbar";
-import Landing from "./Components/Landing/landing";
-import Services from "./Components/Services/services";
-import About from "./Components/About/about";
+import DefaultLayout from './layouts/DefaultLayout'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Navbar/>
-    <Landing/>
-    <Services/>
-    <About/>
+    <DefaultLayout></DefaultLayout>
   </React.StrictMode>
 );
 

@@ -64,17 +64,6 @@ function NavbarMenu() {
             Message
           </a>
           <a
-            href="#About"
-            className={
-              menuOn
-                ? "menu-nav-item menu-nav-item-off"
-                : "menu-nav-item menu-nav-item-on"
-            }
-            onClick={() => setMenuOn(!menuOn)}
-          >
-            About
-          </a>
-          <a
             target="blank"
             href="tel:+994515630813"
             className={
